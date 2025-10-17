@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { fetchSpendingByCategory } from "../services/slices/customerSlice";
-import { useAppDispatch, useAppSelector } from "../services/hooks/hooks";
-import DateRangePicker from "./DateRangePicker";
-import "../App.css";
+import { fetchSpendingByCategory } from "../../services/slices/customerSlice";
+import { useAppDispatch, useAppSelector } from "../../services/hooks/hooks";
+import DateRangePicker from "../DatePicker/DateRangePicker";
+
 
 interface TrendsChartProps {
     data: any[]

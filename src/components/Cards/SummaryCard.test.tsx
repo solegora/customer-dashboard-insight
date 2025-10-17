@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import SummaryCard from "../components/SummaryCard";
+import SummaryCard from "../Cards/SummaryCard";
 
 describe("SummaryCard", () => {
     it("renders loading state when summary is null", () => {

@@ -1,4 +1,3 @@
-import './Cards.css'
 
 export default function ProfileCard({ profile }: { profile: any }) {
     if (!profile) return <div className="card">Loading profile...</div>

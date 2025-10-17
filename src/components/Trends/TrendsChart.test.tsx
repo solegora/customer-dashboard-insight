@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import TrendsChart from "../components/TrendsChart";
-import { useAppDispatch, useAppSelector } from "../services/hooks/hooks";
-import { fetchSpendingByCategory } from "../services/slices/customerSlice";
+import TrendsChart from "../Trends/TrendsChart";
+import { useAppDispatch, useAppSelector } from "../../services/hooks/hooks";
+import { fetchSpendingByCategory } from "../../services/slices/customerSlice";
 
 // 🧩 Mock Redux hooks and thunk
 jest.mock("../services/hooks/hooks", () => ({
