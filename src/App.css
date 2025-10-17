@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--capitec-lightblue);
+  color: var(--capitec-white);
+}
+
+.table-header {
+  color: var(--capitec-navy);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.trends-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--capitec-navy);
+}
+
+.trends-table th,
+.trends-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--capitec-lightblue);
+}
+
+.trends-table th {
+  background-color: var(--capitec-navy);
+  color: var(--capitec-white);
+}
+
+.trends-table tr:hover {
+  background-color: rgba(var(--capitec-lightblue-rgb), 0.1);
+}

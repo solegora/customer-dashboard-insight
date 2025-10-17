@@ -1,0 +1,19 @@
+:root {
+  --capitec-navy: #003B5C;
+  --capitec-blue: #0075BE;
+  --capitec-lightblue: #E5F1F8;
+  --capitec-grey: #F5F5F5;
+  --capitec-white: #FFFFFF;
+  --capitec-error: #DC3545;
+  --capitec-success: #28A745;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+body {
+  background-color: var(--capitec-grey);
+  color: var(--capitec-navy);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+}

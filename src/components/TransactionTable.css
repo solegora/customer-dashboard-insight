@@ -1,0 +1,97 @@
+.card {
+    background: var(--capitec-lightblue);
+    border: 1px solid var(--capitec-lightblue);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    padding: 1.25rem;
+    margin-top: 1rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--capitec-navy);
+    margin-bottom: 1rem;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: var(--capitec-navy);
+}
+
+.card thead {
+    background-color: var(--capitec-grey);
+    text-align: left;
+}
+
+.card th {
+    font-weight: 600;
+    color: var(--capitec-grey-navy);
+    padding: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.card td {
+    padding: 0.75rem;
+    border-top: 1px solid var(--capitec-lightblue);
+    vertical-align: middle;
+}
+
+.card tr:hover td {
+    background-color: var(--capitec-lightblue);
+}
+
+.card td:last-child,
+.card th:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+.card td:last-child {
+    color: #16a34a;
+}
+
+.card tbody tr:nth-child(even) td {
+    background-color: var(--capitec-lightblue);
+}
+
+.card {
+    background: var(--capitec-navy);
+    border-color: var(--capitec-blue);
+}
+
+.card h3 {
+    color: var(--capitec-white);
+}
+
+.card table {
+    color: var(--capitec-white);
+}
+
+.card thead {
+    background: var(--capitec-blue);
+}
+
+.card th {
+    color: #e2e8f0;
+    border-bottom-color: var(--capitec-navy);
+}
+
+.card td {
+    border-top-color: var(--capitec-blue);
+}
+
+.card tr:hover td {
+    background: var(--capitec-navy);
+}
+
+.card td:last-child {
+    color: var(--capitec-error);
+}

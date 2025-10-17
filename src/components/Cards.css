@@ -1,0 +1,7 @@
+.card {
+    background: var(--capitec-white);
+    border-left: 4px solid var(--capitec-blue);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
