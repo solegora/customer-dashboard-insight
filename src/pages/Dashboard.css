@@ -1,14 +1,16 @@
 .dashboard {
     min-height: 100vh;
+    background: linear-gradient(180deg, #f4f8fb 0%, #eef4f9 100%);
 }
 
 .dashboard-header {
     background: var(--capitec-navy);
     color: var(--capitec-white);
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 8px 24px rgba(0, 40, 70, 0.2);
 }
 
 .header-content {
@@ -17,6 +19,78 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.header-subtitle {
+    margin: 0.3rem 0 0;
+    color: #d8e7f5;
+    font-size: 0.95rem;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header-date {
+    color: #c8ddf0;
+    font-size: 0.85rem;
+}
+
+.refresh-button {
+    border: 0;
+    border-radius: 999px;
+    padding: 0.6rem 1rem;
+    background: #0ea5e9;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.refresh-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(14, 165, 233, 0.35);
+}
+
+.refresh-button:focus-visible {
+    outline: 3px solid #bfdbfe;
+    outline-offset: 2px;
+}
+
+.dashboard-status {
+    max-width: 1400px;
+    margin: 1rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.status-banner {
+    background: #e0f2fe;
+    border: 1px solid #bae6fd;
+    color: #075985;
+    border-radius: 12px;
+    padding: 0.65rem 0.9rem;
+    font-weight: 500;
+}
+
+.status-banner-error {
+    background: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+
+.status-banner-success {
+    background: #ecfdf5;
+    border-color: #bbf7d0;
+    color: #166534;
 }
 
 .dashboard-grid {
@@ -47,11 +121,45 @@
 }
 
 @media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .dashboard-grid {
         grid-template-columns: 1fr;
+        margin-top: 1.25rem;
     }
 
     .summary-cards {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard-header {
+        padding: 1rem;
+    }
+
+    .dashboard-status {
+        padding: 0 1rem;
+    }
+
+    .dashboard-grid {
+        padding: 0 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

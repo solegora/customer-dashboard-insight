@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
   background: var(--capitec-white);
@@ -13,6 +14,12 @@
 
 .date-range-picker:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.date-range-label {
+  font-size: 0.85rem;
+  color: #4b5563;
+  font-weight: 600;
 }
 
 .date-preset-select {
@@ -48,4 +55,24 @@
   background: var(--capitec-white);
   color: #1a202c;
   font-weight: 500;
+}
+
+.date-range-value {
+  font-size: 0.85rem;
+  color: #0f172a;
+  background: #f1f5f9;
+  border: 1px solid #dbe7f2;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+}
+
+@media (max-width: 640px) {
+  .date-range-picker {
+    width: 100%;
+  }
+
+  .date-preset-select {
+    flex: 1;
+    min-width: 180px;
+  }
 }

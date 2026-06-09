@@ -1,12 +1,18 @@
 body {
   margin: 0;
-  font-family: Inter, Arial, sans-serif;
-  background: var(--capitec-lightblue);
-  color: var(--capitec-white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--capitec-grey);
+  color: var(--capitec-navy);
+  line-height: 1.45;
 }
 
 .table-header {
   color: var(--capitec-navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .table-container {
@@ -18,21 +24,23 @@ body {
 .trends-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: var(--capitec-navy);
+  background-color: var(--capitec-white);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .trends-table th,
 .trends-table td {
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid var(--capitec-lightblue);
+  border-bottom: 1px solid #dbe7f2;
 }
 
 .trends-table th {
-  background-color: var(--capitec-navy);
-  color: var(--capitec-white);
+  background-color: #edf4fb;
+  color: var(--capitec-navy);
 }
 
 .trends-table tr:hover {
-  background-color: rgba(var(--capitec-lightblue-rgb), 0.1);
+  background-color: #f6f9fd;
 }

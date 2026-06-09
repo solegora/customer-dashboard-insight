@@ -6,8 +6,9 @@ import DateRangePicker from "../DatePicker/DateRangePicker";
 
 interface TrendsChartProps {
     data: any[]
+    onDateRangeChange?: (start: Date, end: Date, preset?: string) => void
 }
-const TrendsChart: React.FC<TrendsChartProps> = ({ data }) => {
+const TrendsChart: React.FC<TrendsChartProps> = ({ data, onDateRangeChange }) => {
     const dispatch = useAppDispatch();
     const { categories } = useAppSelector((state) => state.customer);
 
@@ -29,9 +30,10 @@ const TrendsChart: React.FC<TrendsChartProps> = ({ data }) => {
                 <DateRangePicker
                     startDate={startDate}
                     endDate={endDate}
-                    onChange={(start, end) => {
+                    onChange={(start, end, preset) => {
                         setStartDate(start);
                         setEndDate(end);
+                        onDateRangeChange?.(start, end, preset);
                     }}
                 />
             </div>

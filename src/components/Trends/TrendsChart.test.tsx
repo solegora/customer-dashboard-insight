@@ -6,16 +6,16 @@ import { useAppDispatch, useAppSelector } from "../../services/hooks/hooks";
 import { fetchSpendingByCategory } from "../../services/slices/customerSlice";
 
 // 🧩 Mock Redux hooks and thunk
-jest.mock("../services/hooks/hooks", () => ({
+jest.mock("../../services/hooks/hooks", () => ({
     useAppDispatch: jest.fn(),
     useAppSelector: jest.fn(),
 }));
 
-jest.mock("../services/slices/customerSlice", () => ({
+jest.mock("../../services/slices/customerSlice", () => ({
     fetchSpendingByCategory: jest.fn(),
 }));
 
-jest.mock("../components/DateRangePicker", () => (props: any) => (
+jest.mock("../DatePicker/DateRangePicker", () => (props: any) => (
     <div data-testid="date-range-picker">
         <button
             data-testid="change-date"
